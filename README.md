@@ -23,6 +23,7 @@ Este é um projeto desenvolvido, inspirado nos desafios do [app ideas - Calorie 
  - Realizar implementação de api do back, para fornecer dados para o front;
  - Realizar cruzamento de informações entre os dadasets do [MyPyramid](https://catalog.data.gov/dataset/mypyramid-food-raw-data);
  - Substitir mapeamento de dados manuais realizados no front, para o back;
+ - Substituir filtros realizados no front, para serem feitos no back, direto no Banco de dados, para fins de melhor performance;
  - Receber no front, DTOs que mascarem o tipo de dado a ser buscado. (Sem distinção entre o dataset de Food Display Table e Condiment Food Table);
  - Implementar Testes unitários na aplicação;
  - Facilitar a execução da aplicação, (subir front + back e BD no futuro) com um docker-compose.
