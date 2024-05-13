@@ -9,7 +9,7 @@ Este é um projeto desenvolvido, inspirado nos desafios do [app ideas - Calorie 
  - Exibir mensagem de alerta, caso uma busca vazia tenha sido realizada
  - Implementar controles de formulário como (realizar busca e limpar busca/filtros)
  - Visualização de elementos paginados
- - 
+   
 ## Tecnologias
 
  - React
