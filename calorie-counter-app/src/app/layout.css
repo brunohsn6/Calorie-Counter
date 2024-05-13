@@ -1,0 +1,9 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: unset;
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(242, 238, 227, 0.945);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
