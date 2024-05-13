@@ -2,8 +2,10 @@ import React, { createContext, useContext, useReducer, ReactNode } from "react";
 import { GlobalActionType, GlobalStateActions, GlobalStateType } from "./types";
 import { FoodItem } from "@/typings/foodItem";
 import { FoodCondimentFacts } from "@/typings/foodCondimentFacts";
+import { MealElement } from "@/typings/filterFood";
 
 const initialState: GlobalStateType = {
+  foodMenu: [],
   foods: [],
   foodsNeedings: [],
   foodsNeedingsCondiments: [],
@@ -32,6 +34,12 @@ const globalReducer = (
       return {
         ...state,
         foodsNeedingsCondiments: action.payload as Array<FoodCondimentFacts>,
+      };
+
+    case GlobalStateActions.ADD_FOOD_TO_MENU:
+      return {
+        ...state,
+        foodMenu: action.payload as Array<MealElement>,
       };
     default:
       throw new Error(`Ação desconhecida: ${action.type}`);

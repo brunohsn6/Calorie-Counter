@@ -1,9 +1,23 @@
 import { FoodItem } from "@/typings/foodItem";
-import * as S from "./style";
+import * as FoodStyle from "./style";
+import { FoodCondimentFacts } from "@/typings/foodCondimentFacts";
 interface FoodCardProps {
-  food: FoodItem;
+  foodId: number;
+  foodTitle: string;
+  foodDescription: string;
+  onSelect: (foodId: number) => void;
 }
-export const FoodCard = ({ food }: FoodCardProps) => {
-  if (!!food)
-    return <S.FoodCardContainer>{food.Display_Name}</S.FoodCardContainer>;
+export const FoodCard = ({
+  foodId,
+  foodTitle,
+  foodDescription,
+  onSelect,
+}: FoodCardProps): JSX.Element | undefined => {
+  if (!!foodId)
+    return (
+      <FoodStyle.Container onClick={() => onSelect(foodId)}>
+        <FoodStyle.Title>{foodTitle}</FoodStyle.Title>
+        <FoodStyle.Description>{foodDescription}</FoodStyle.Description>
+      </FoodStyle.Container>
+    );
 };

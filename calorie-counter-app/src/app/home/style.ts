@@ -28,10 +28,9 @@ export const DataContainer = styled.div`
   width: 80%;
   display: flex;
   justify-content: center;
-  background-color: white;
-  height: 66vh;
+  height: 60vh;
   border-radius: 0.2em;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   flex-direction: row;
 `;
